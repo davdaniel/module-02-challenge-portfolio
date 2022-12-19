@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: ghostwhite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  background-color: lightblue;
+  padding: 0 .5rem 0 2rem;
+  line-height: 1;
+}
+
+p {
+  margin: 1rem 0 1rem 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+main > section {
+  margin: 2rem 0;
+}
+
+section > nav {
+  width: 100%;
+}
+
+.header {
+  background-color: darkslateblue;
+  padding: .5em 0;
+}
+
+.header > nav {
+  padding-right: 2rem;
+}
+
+.header-nav > a {
+  color: lightblue;
+}
+
+.header-nav > a:not(:last-of-type) {
+  margin-right: .5rem;
+}
+
+.hero-banner {
+  /* Photo by Yancy Min Unsplash https://unsplash.com/photos/842ofHC6MaI */
+  background-image: url("../images/yancy-min-842ofHC6MaI-unsplash.jpg");
+  background-color: #cccccc;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#h2 {
+  background-color: lightblue;
+  width: fit-content;
+  padding: 0 1rem;
+  position: absolute;
+  top: 75%;
+  right: 2%;
+  transform: translate(-2%, -75%);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row--space-between {
+  justify-content: space-between;
+}
+
+.row--space-evenly {
+  justify-content: space-evenly;
+}
+
+.grid-align {
+  display: grid;
+  place-self: end;
+}
+
+.align-right {
+  text-align: right;
+  border-right: 4px solid darkslateblue;
+  padding-right: 1rem;
+}
+
+#prework {
+  grid-area: prework;
+  border: 4px solid lightblue;
+  background-image: url("../images/prework-study-guide.jpg");
+  background-color: #cccccc;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#module-one {
+  grid-area: module-one;
+  border: 4px solid lightblue;
+  background-image: url("../images/code-refactor.jpg");
+  background-color: #cccccc;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#module-two {
+  grid-area: module-two;
+  border: 4px solid lightblue;
+  position: relative;
+  background-image: url("../images/portfolio.jpg");
+  background-color: #cccccc;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#module-three {
+  grid-area: module-three;
+  border: 4px solid lightblue;
+
+  /* Photo by Huma Kabakci on Unsplash https://unsplash.com/photos/oRk4Ep65tRc */
+  background-image: url("../images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg");
+  background-color: #cccccc;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#module-four {
+  grid-area: module-four;
+  border: 4px solid lightblue;
+
+  /* Photo by Huma Kabakci on Unsplash https://unsplash.com/photos/oRk4Ep65tRc */
+  background-image: url("../images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg");
+  background-color: #cccccc;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "prework prework"
+    "module-one module-two"
+    "module-three module-four";
+  gap: 1em;
+}
+
+.grid-gallery > a {
+  text-decoration: none;
+}
+
+span {
+  color: black;
+  background-color: lightblue;
+  width: fit-content;
+  padding: 0 .5rem 0 1rem;
+  position: absolute;
+  top: 75%;
+}
+
+.item-a {
+  grid-area: header;
+}
+
+.item-b {
+  grid-area: main;
+  margin: auto;
+  padding: 0 2rem 0 2rem;
+}
+
+.grid-columns {
+  display: grid;
+  grid-template-columns: .5fr 2fr;
+  grid-template-areas: "header main main";
+  justify-self: center;
+}
+
+.contact-nav > a {
+  color: darkslateblue;
+}
